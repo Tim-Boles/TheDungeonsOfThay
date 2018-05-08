@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheDungeonsOfThay", "TheDungeonsOfThay\TheDungeonsOfThay.csproj", "{8778A96D-66A7-41FE-99DC-AE415BEEFCCA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thay.Test", "Thay.Test\Thay.Test.csproj", "{3E633B78-EB64-40BA-ADE7-63DF2337AEDD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{8778A96D-66A7-41FE-99DC-AE415BEEFCCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8778A96D-66A7-41FE-99DC-AE415BEEFCCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8778A96D-66A7-41FE-99DC-AE415BEEFCCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E633B78-EB64-40BA-ADE7-63DF2337AEDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E633B78-EB64-40BA-ADE7-63DF2337AEDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E633B78-EB64-40BA-ADE7-63DF2337AEDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E633B78-EB64-40BA-ADE7-63DF2337AEDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

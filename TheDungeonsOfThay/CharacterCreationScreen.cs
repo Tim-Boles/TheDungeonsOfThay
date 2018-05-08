@@ -10,7 +10,7 @@ namespace TheDungeonsOfThay
     {
         public void OnStartedCharacterCreation(object source, EventArgs args)
         {
-            Console.WriteLine("Welcome to chracter creation!");
+            Console.WriteLine("Welcome to character creation!");
         }
     }
 }
