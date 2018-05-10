@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 namespace TheDungeonsOfThay
 {
     interface IItem
-    {
+    {   
+        string OnPickUp { get; set; }
         float Weight { get; set; }
         float GoldValue { get; set; }
         int Quantity { get; set; }
@@ -17,14 +18,15 @@ namespace TheDungeonsOfThay
         string Lore { get; set; }
         string Ondrop { get; set; }
 
-        // calls weight, goldvalue, description, quantity, Effect, name.
+        // places item into inventory and displays item name, weight and goldvalue.
+        string GainItem();
+         // calls weight, goldvalue, description, quantity, Effect, name.
         string Inspect();
-        //displays drop item text and removes from inventory.
+        // displays drop item text and removes from inventory.
         string DropItem();
-
-
-
-
+        
+        
+        
     }
 }
 

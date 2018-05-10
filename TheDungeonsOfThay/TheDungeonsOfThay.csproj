@@ -57,7 +57,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CharacterCreationScreen.cs" />
+    <Compile Include="Consumables.cs" />
     <Compile Include="IActor.cs" />
+    <Compile Include="IConsumables.cs" />
     <Compile Include="IItem.cs" />
     <Compile Include="IManager.cs" />
     <Compile Include="Item.cs" />

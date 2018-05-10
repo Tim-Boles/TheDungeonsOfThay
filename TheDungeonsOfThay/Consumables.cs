@@ -5,21 +5,25 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace TheDungeonsOfThay
+
+
+
 {
-    public class Item : IItem
+    public class Consumables : IItem, IConsumables
     {
-        public Item(string onPickUp, string name, float GoldValue, int quantity, float weight, string effect, string lore)
+        
+        public Consumables(string OnPickUp, string name, float GoldValue, int quantity, float weight, string effect, string lore, int duration)
         {
-            this.OnPickUp = onPickUp;
+            this.OnPickUp = OnPickUp;
             this.Name = name;
             this.GoldValue = GoldValue;
             this.Quantity = quantity;
             this.Weight = weight;
             this.Effect = effect;
             this.Lore = lore;
-
-
+            this.Duration = duration;
         }
+
         public string OnPickUp { get; set; }
         public float Weight { get; set; }
         public float GoldValue { get; set; }
@@ -29,24 +33,26 @@ namespace TheDungeonsOfThay
         public string Effect { get; set; }
         public string Lore { get; set; }
         public string Ondrop { get; set; }
+        public int Duration { get; set; }
 
-
-            public string GainItem()
-            {
+        public string GainItem()
+        {
             return $"{Name} {OnPickUp}";
-            }
-            public string DropItem()
-            {
-                return $"You've dropped {Name}.";
-
-            }
-
-            public string Inspect()
-            {
-                return $"Name:{Name} Value:{GoldValue} Quantity:{Quantity} Weight:{Weight} Effect:{Effect} Lore{Lore} ";
-            }
-
-
+        }
+        public string DropItem()
+        {
+            return $"You've dropped {Name}.";
 
         }
+
+        public string Inspect()
+        {
+            return $"Name:{Name} Value:{GoldValue} Quantity:{Quantity} Weight:{Weight} Effect:{Effect} Lore{Lore} ";
+        }
+
+        public string OnUse()
+        {
+            return $"{Effect} and {Name} has been removed from your inventory";
+        }
     }
+}
