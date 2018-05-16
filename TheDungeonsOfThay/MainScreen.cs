@@ -16,6 +16,7 @@ namespace TheDungeonsOfThay
 
             if(answer == "anew")
             {
+                Console.Clear();
                 OnStartedCharacterCreation();
             }
 
@@ -32,6 +33,11 @@ namespace TheDungeonsOfThay
             {
                 StartedCharacterCreation(this, EventArgs.Empty);
             }
+        }
+
+        public void OnStartedNewGame(object source, EventArgs args)
+        {
+            Console.WriteLine("You've made it back to the main screen!");
         }
 
     }

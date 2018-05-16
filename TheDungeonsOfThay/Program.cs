@@ -17,6 +17,8 @@ namespace TheDungeonsOfThay
             SM.CreateScreenManager();
             SM.StartedGame += MS.OnStartedGame;
             MS.StartedCharacterCreation += CS.OnStartedCharacterCreation;
+            CS.StartedNewGame += MS.OnStartedNewGame;
+
 
             SM.StartGame();
 

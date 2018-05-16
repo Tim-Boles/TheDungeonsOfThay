@@ -12,9 +12,12 @@ namespace TheDungeonsOfThay
         public float Armor { get; set; }
         public float Strength { get; set; }
         public float Dexterity { get; set; }
-        public int Mana { get; set; }
+        public float Mana { get; set; }
+        public int Level { get; set; }
+        public int EXP { get; set; }
         public string Name { get; set; }
         public string Race { get; set; }
+        public string ClassName { get; set; }
 
         public float Attack()
         {
@@ -44,6 +47,14 @@ namespace TheDungeonsOfThay
         public void UseItem()
         {
             throw new NotImplementedException();
+        }
+
+        public string[] toStringArray()
+        {
+            string[] info = {Health.ToString(), Armor.ToString(),Strength.ToString(),Dexterity.ToString(),Mana.ToString(),
+            Level.ToString(),EXP.ToString(),Name,Race,ClassName};
+
+            return info;
         }
     }
 }

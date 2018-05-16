@@ -12,7 +12,8 @@ namespace TheDungeonsOfThay
         float Armor { get; set; }
         float Strength { get; set; }
         float Dexterity { get; set; }
-        int Mana { get; set; }
+        float Mana { get; set; }
+        int Level { get; set; }
         string Name { get; set; }
         string Race { get; set; }
 
