@@ -37,7 +37,7 @@ namespace TheDungeonsOfThay
 
         public string GainItem()
         {
-            return $"{Name} {OnPickUp}";
+            return $"You've added {Name} into your inventory. \nWeight: {Weight} \nValue:{GoldValue}";
         }
         public string DropItem()
         {

@@ -20,7 +20,7 @@ namespace TheDungeonsOfThay
 
         // places item into inventory and displays item name, weight and goldvalue.
         string GainItem();
-         // calls weight, goldvalue, description, quantity, Effect, name.
+         // calls weight, goldvalue, lore, quantity, Effect, name.
         string Inspect();
         // displays drop item text and removes from inventory.
         string DropItem();

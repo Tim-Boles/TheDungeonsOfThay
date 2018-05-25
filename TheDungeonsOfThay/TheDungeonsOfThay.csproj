@@ -56,9 +56,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Armor.cs" />
     <Compile Include="CharacterCreationScreen.cs" />
     <Compile Include="Consumables.cs" />
     <Compile Include="IActor.cs" />
+    <Compile Include="IArmor.cs" />
     <Compile Include="IConsumables.cs" />
     <Compile Include="IItem.cs" />
     <Compile Include="IManager.cs" />
@@ -71,6 +73,8 @@
     <Compile Include="ScreenManager.cs" />
     <Compile Include="TextFileData.cs" />
     <Compile Include="TextFileDataIO.cs" />
+    <Compile Include="IWeapons.cs" />
+    <Compile Include="Weapons.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
