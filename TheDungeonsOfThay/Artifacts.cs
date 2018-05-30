@@ -6,8 +6,15 @@ using System.Threading.Tasks;
 
 namespace TheDungeonsOfThay
 {
-    class Armor : IItem, IArmor
+    class Artifacts : IArtifacts, IItem
     {
+        public float HPBonus { get; set; }
+        public float DEFBonus { get; set; }
+        public float STRBonus { get; set; }
+        public float DexBonus { get; set; }
+        public int ManaBonus { get; set; }
+        public float ATKBonus { get; set; }
+        public float MiscBonus { get; set; }
         public string OnPickUp { get; set; }
         public float Weight { get; set; }
         public float GoldValue { get; set; }
@@ -17,19 +24,15 @@ namespace TheDungeonsOfThay
         public string Effect { get; set; }
         public string Lore { get; set; }
         public string Ondrop { get; set; }
-        public string ArmorType { get; set; }
-        public string ArmorSubType { get; set; }
-        public float ArmorMod { get; set; }
-        public int ArmorSlot { get; set; }
+
+        public string Bonusinfo()
+        {
+            return $"{Name} has been imbued with a magical item, it now gives you plus 1 to strength"; //placeholder method, logic to add later
+        }
 
         public string DropItem()
         {
             return $"You've dropped {Name}."; // remove item from inventory
-        }
-
-        public string EquipArmor()
-        {
-            return $"{Name} has been equipped to the appropiate slot.";// add logic to equip armor to appropiate slot
         }
 
         public string GainItem()
@@ -42,9 +45,9 @@ namespace TheDungeonsOfThay
             return $"Name:{Name} Value:{GoldValue} Quantity:{Quantity} Weight:{Weight} Effect:{Effect} Lore{Lore} ";
         }
 
-        public string UnEquipArmor()
+        public float StatBonus()
         {
-          return  $"{Name} has been unequipped.";
+            return MiscBonus++;//pass stat variable and return it increased by 1 or higher Int value
         }
     }
 }

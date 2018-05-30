@@ -37,11 +37,11 @@ namespace TheDungeonsOfThay
 
         public string GainItem()
         {
-            return $"You've added {Name} into your inventory. \nWeight: {Weight} \nValue:{GoldValue}";
+            return $"You've added {Name} into your inventory. \nWeight: {Weight} \nValue:{GoldValue}"; // add logic to pick up and add to inventory
         }
         public string DropItem()
         {
-            return $"You've dropped {Name}.";
+            return $"You've dropped {Name}."; // add logic to remove item from inventory
 
         }
 

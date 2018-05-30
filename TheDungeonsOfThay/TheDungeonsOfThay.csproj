@@ -57,10 +57,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Armor.cs" />
+    <Compile Include="Artifacts.cs" />
     <Compile Include="CharacterCreationScreen.cs" />
     <Compile Include="Consumables.cs" />
     <Compile Include="IActor.cs" />
     <Compile Include="IArmor.cs" />
+    <Compile Include="IArtifacts.cs" />
     <Compile Include="IConsumables.cs" />
     <Compile Include="IItem.cs" />
     <Compile Include="IManager.cs" />

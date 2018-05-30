@@ -33,8 +33,8 @@ namespace TheDungeonsOfThay
 
             public string GainItem()
             {
-            return $"You've added {Name} into your inventory. \nWeight: {Weight} \nValue:{GoldValue}";
-            }
+            return $"You've added {Name} into your inventory. \nWeight: {Weight} \nValue:{GoldValue}"; // add logic to pick up and add to inventory
+        }
             public string DropItem()
             {
             return $"You've dropped {Name}."; // remove item from inventory
@@ -43,8 +43,8 @@ namespace TheDungeonsOfThay
 
             public string Inspect()
             {
-                return $"You've added {Name} into your inventory. \nWeight: {Weight} \nValue:{GoldValue}";
-            }
+            return $"Name:{Name} Value:{GoldValue} Quantity:{Quantity} Weight:{Weight} Effect:{Effect} Lore{Lore} "; // add logic to inspect
+        }
 
 
 
