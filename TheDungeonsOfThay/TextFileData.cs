@@ -61,6 +61,7 @@ namespace TextForRPGTest
         public void CreateFile()
         {
             string path = @"" + Path + "\\" + Name + ".txt";
+            TruePath = path;
             if (File.Exists(path))
             {
                 File.Delete(path);
