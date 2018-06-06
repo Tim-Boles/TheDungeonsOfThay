@@ -53,6 +53,7 @@
     <Compile Include="Consumables.cs" />
     <Compile Include="IConsumables.cs" />
     <Compile Include="IItem.cs" />
+    <Compile Include="IModule.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="IWeapons.cs" />
     <Compile Include="Weapons.cs" />
