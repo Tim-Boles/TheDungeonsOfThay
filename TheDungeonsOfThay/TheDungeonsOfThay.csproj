@@ -43,20 +43,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BattlefieldModule.cs" />
     <Compile Include="CharacterCreationScreen.cs" />
+    <Compile Include="CombatModule.cs" />
     <Compile Include="DwarfRace.cs" />
     <Compile Include="ElfRace.cs" />
     <Compile Include="HumanRace.cs" />
-    <Compile Include="Consumables.cs"/>
-    <Compile Include="IConsumables.cs"/>
-    <Compile Include="IItem.cs"/>
-    <Compile Include="Item.cs"/>
-    <Compile Include="IWeapons.cs"/>
-    <Compile Include="Weapons.cs"/>
-    <Compile Include="IArtifacts.cs"/>
-    <Compile Include="Artifacts.cs"/>
-    <Compile Include="Armor.cs"/>
-    <Compile Include="IArmor.cs"/>
+    <Compile Include="Consumables.cs" />
+    <Compile Include="IConsumables.cs" />
+    <Compile Include="IItem.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="IWeapons.cs" />
+    <Compile Include="Weapons.cs" />
+    <Compile Include="IArtifacts.cs" />
+    <Compile Include="Artifacts.cs" />
+    <Compile Include="Armor.cs" />
+    <Compile Include="IArmor.cs" />
     <Compile Include="IActor.cs" />
     <Compile Include="IClass.cs" />
     <Compile Include="IManager.cs" />
