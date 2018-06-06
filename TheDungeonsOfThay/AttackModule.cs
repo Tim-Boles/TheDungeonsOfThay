@@ -13,6 +13,7 @@ namespace TheDungeonsOfThay
         public float _DamageMod;
         public float _DamageStat;
         public float _HitChance;
+        string ActorID { get; set; }
 
         public AttackModule(float dmgMod, float dmgStat)
         {
